@@ -1,5 +1,4 @@
 class CreateUsers < ActiveRecord::Migration
-	attr_accessible :email, :username
   def change
     create_table :users do |t|
     	t.string :email
