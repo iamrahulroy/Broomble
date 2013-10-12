@@ -1,0 +1,10 @@
+<h1>All Links</h1>
+
+<ul id="links">
+<% @links.each do |link| %>
+	<li>
+		<%= link_to link.title, link_path(link), class: 'link_title' %>
+	</li>
+
+	<% end %>
+</ul>
